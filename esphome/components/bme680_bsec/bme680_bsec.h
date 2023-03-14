@@ -56,7 +56,7 @@ class BME680BSECComponent : public Component, public i2c::I2CDevice {
   void loop() override;
 
  protected:
-  void set_config_(const uint8_t *config, u_int32_t len);
+  void set_config_(const uint8_t *config, uint32_t len);
   float calc_sensor_sample_rate_(SampleRate sample_rate);
   void update_subscription_();
 
